@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Yajid</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="./js/app.js"></script>
+</head>
+<body>
+
+
+    <!-- ---------------------------------------- -->
+    <!-- ---------------- Navbar ---------------- -->
+    <!-- ---------------------------------------- -->
+
+    <header class="w-full py-3 flex items-start justify-center">
+        <div class="w-[95%]">
+            <div class="w-full pt-2 pb-4 flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                    <button class="text-blue-500 transition-all ease duration-300 active:text-blue-400" title="Menú">
+                        <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                        </svg>
+                    </button>
+                    <h1 class="text-xl font-bold text-blue-500">
+                        <a href="./" title="Super Yajid">Super Yajid</a>
+                    </h1>
+                </div>
+                <button class="text-blue-500 transition-all ease duration-300 active:text-blue-400" title="Mi cuenta">
+                    <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                    </svg>
+                </button>
+            </div>
+
+            <nav class="w-full text-gray-700 flex items-start justify-center">
+                <ul class="w-full uppercase text-sm font-medium flex justify-between gap-1 lg:gap-2">
+                    <li class="w-full">
+                        <a href="./index.html" class="w-full py-1 rounded-md flex items-center justify-center gap-1 transition-all ease duration-200 shadow-md hover:shadow active:shadow-sm active:opacity-50">
+                            <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                            </svg>
+                            <span class="hidden md:block">Ventas</span>
+                        </a>
+                    </li>
+                    <li class="w-full">
+                        <a href="./inventario.producto.html" class="bg-blue-500 text-white w-full py-1 rounded-md flex items-center justify-center gap-1 transition-all ease duration-200 shadow-md">
+                            <svg class="w-5 h-5 text-white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
+                                <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
+                                <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
+                            </svg>
+                            <span class="hidden md:block">Productos</span>
+                        </a>
+                    </li>
+                    <li class="w-full">
+                        <a href="./movimientos.html" class="w-full py-1 rounded-md flex items-center justify-center gap-1 transition-all ease duration-200 shadow-md hover:shadow active:shadow-sm active:opacity-50">
+                            <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>                              
+                            </svg>
+                            <span class="hidden md:block">Movimientos</span>
+                        </a>
+                    </li>
+                    <li class="w-full">
+                        <a href="./reportes.html" class="w-full py-1 rounded-md flex items-center justify-center gap-1 transition-all ease duration-200 shadow-md hover:shadow active:shadow-sm  active:opacity-50">
+                            <svg class="w-5 h-5 text-violet-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                            </svg>
+                            <span class="hidden md:block">Reportes</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Submenú -->
+    <div class="bg-gray-100 w-full py-2 flex items-start justify-center">
+        <div class="w-[95%]">
+            <div class="overflow-x-auto">
+                <ul class="text-gray-500 text-xs font-medium whitespace-nowrap flex items-center justify-start gap-2">
+                    <li class="bg-white rounded-md border shadow-sm">
+                        <button class="py-1 px-3 flex items-center justify-center gap-1">
+                            <svg class="w-3 h-3 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M4 2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1ZM4 5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM7.5 5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1ZM4.5 8a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm2.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm3.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z"/>
+                                <path d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V1Zm11 0H3v14h3v-2.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 .5.5V15h3V1Z"/>
+                            </svg>
+                            <span>Inventario</span>
+                        </button>
+                    </li>
+                    <li class="bg-white rounded-md border shadow-sm">
+                        <button class="py-1 px-3 flex items-center justify-center gap-1">
+                            <svg class="w-3 h-3 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                            </svg>
+                            <span>Nuevo</span>
+                        </button>
+                    </li>
+                    <li class="bg-white rounded-md border shadow-sm">
+                        <button class="py-1 px-3 flex items-center justify-center gap-1">
+                            <svg class="w-3 h-3 text-orange-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                            </svg>
+                            <span>Modificar</span>
+                        </button>
+                    </li>
+                    <li class="bg-white rounded-md border shadow-sm">
+                        <button class="py-1 px-3 flex items-center justify-center gap-1">
+                            <svg class="w-3 h-3 text-red-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"/>
+                            </svg>
+                            <span>Eliminar</span>
+                        </button>
+                    </li>
+                    <li class="bg-white rounded-md border shadow-sm">
+                        <button class="py-1 px-3 flex items-center justify-center gap-1">
+                            <svg class="w-3 h-3 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+                            </svg>
+                            <span>Departamentos</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------------------- -->
+    <!-- --------- Barra de bpusqueda ----------- -->
+    <!-- ---------------------------------------- -->
+
+    <div class="w-full my-3 flex items-start justify-center">
+        <div class="bg-white w-[95%]">
+            
+            <div class="w-full">
+                <p class="block uppercase text-gray-500 text-xs font-medium">Buscar un producto:</p>
+                <form class="my-2 flex items-center rounded-md">
+                    <label for="simple-search" class="sr-only">Buscar</label>
+                    <div class="relative w-full">
+                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                            <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block w-full pl-10 p-2.5 focus:outline-none focus:bg-white focus:border-gray-500" placeholder="Buscar...">
+                    </div>
+                    <button type="submit" class="bg-gray-50 text-gray-500 p-2.5 rounded-md border-2 transition-all ease duration-200 hover:bg-azul-600 active:bg-gray-100">
+                        <svg aria-hidden="true" class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path></svg>
+                        <span class="sr-only">Buscar</span>
+                    </button>
+                </form>
+            </div>
+
+            
+            <button class="bg-white text-black border py-1 px-2 rounded-md flex items-center justify-center gap-1 md:hidden">
+                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5v-2zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2h-11z"/>
+                </svg>
+                <span class="text-sm">Filtrar</span>
+            </button>
+
+            <div class="bg-gray-100 w-[95%] h-0 mt-2 p-0 shadow-md rounded-md justify-start gap-2 flex-wrap overflow-hidden fixed md:h-auto md:flex md:flex-nowrap md:static md:p-0 md:shadow-none md:bg-white">
+                <div class="w-full md:w-40">
+                    <p class="text-gray-500 uppercase text-xs pb-1 font-medium">Departamento</p>
+                    <div class="w-full flex items-center">
+                        <select name="select" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                            <option value="todos"> - Todos - </option>
+                            <option value="todos">Departamento 1</option>
+                            <option value="todos">Departamento 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="w-full md:w-40">
+                    <p class="uppercase text-gray-500 text-xs pb-1 font-medium">Categoria</p>
+                    <div class="w-full flex items-center">
+                        <select name="select" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                            <option value="todos"> - Todos - </option>
+                            <option value="todos">Categoria 1</option>
+                            <option value="todos">Categoria 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="w-full md:w-40">
+                    <p class="uppercase text-gray-500 text-xs pb-1 font-medium">Proveedor</p>
+                    <div class="w-full flex items-center">
+                        <select name="select" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                            <option value="todos"> - Todos - </option>
+                            <option value="todos">Proveedor 1</option>
+                            <option value="todos">Proveedor 2</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="w-full md:w-40">
+                    <p class="uppercase text-gray-500 text-xs pb-1 font-medium">Ordenar por</p>
+                    <div class="w-full flex items-center">
+                        <select name="select" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                            <option value="todos"> - Todos - </option>
+                            <option value="todos">Mas vendido</option>
+                            <option value="todos">Mayor precio</option>
+                            <option value="todos">Menor precio</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="w-full md:w-40">
+                    <p class="uppercase text-gray-500 text-xs pl-3 pb-1 font-medium">Minimo</p>
+                    <div class="w-full flex items-center gap-1">
+                        <span class="text-sm">$</span>
+                        <input type="text" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                    </div>
+                </div>
+                <div class="w-full md:w-40">
+                    <p class="uppercase text-gray-500 text-xs pl-3 pb-1 font-medium">Maximo</p>
+                    <div class="w-full flex items-center gap-1">
+                        <span class="text-sm">$</span>
+                        <input type="text" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- ---------------------------------------- -->
+    <!-- --------- Lista de inventario ---------- -->
+    <!-- ---------------------------------------- -->
+
+    <div class="w-full my-3 flex items-start justify-center">
+        <div class="bg-white w-[95%]">
+            <div class="overflow-x-auto">
+                <table class="text-gray-500 w-full text-sm text-left">
+                    <thead class="bg-gray-100 text-blue-400 text-xs uppercase whitespace-nowrap">
+                        <tr>
+
+                            <th class="py-3 px-6 flex items-center justify-center">
+                            </th>
+
+                            <th class="py-3 px-6">
+                                Codigo
+                            </th>
+                            <th class="py-3 px-6">
+                                Producto
+                            </th>
+                            <th class="py-3 px-6">
+                                Departamento
+                            </th>
+                            <th class="py-3 px-6">
+                                Categoria
+                            </th>
+                            <th class="py-3 px-6">
+                                Proveedor
+                            </th>
+                            <th class="py-3 px-6">
+                                Inv. Min
+                            </th>
+                            <th class="py-3 px-6">
+                                Existencia
+                            </th>
+                            <th class="py-3 px-6">
+                                P. Costo
+                            </th>
+                            <th class="py-3 px-6">
+                                P. Venta
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="transition-all ease duration-100 hover:bg-blue-100 hover:text-blue-600" role="button">
+                            <td class="py-4 px-6">
+                                <input class="w-5 h-5" type="checkbox" name="seleccionar">
+                            </td>
+                            <td class="py-4 px-6">
+                                3784562
+                            </td>
+                            <th class="py-4 px-6 font-medium">
+                                Apple MacBook Pro 17"
+                            </th>
+                            <td class="py-4 px-6">
+                                Tecnologia
+                            </td>
+                            <td class="py-4 px-6">
+                                Laptop
+                            </td>
+                            <td class="py-4 px-6">
+                               Apple
+                            </td>
+                            <td class="py-4 px-6">
+                                10
+                            </td>
+                            <td class="py-4 px-6">
+                                15
+                            </td>
+                            <td class="py-4 px-6">
+                                15000
+                            </td>
+                            <td class="py-4 px-6">
+                                18000
+                            </td>
+                        </tr>
+                        <tr class="transition-all ease duration-100 bg-gray-100 hover:bg-blue-100 hover:text-blue-600" role="button">
+                            <td class="py-4 px-6">
+                                <input class="w-5 h-5" type="checkbox" name="seleccionar">
+                            </td>
+                            <td class="py-4 px-6">
+                                9845765
+                            </td>
+                            <th class="py-4 px-6 font-medium">
+                                Apple MacBook Pro 17"
+                            </th>
+                            <td class="py-4 px-6">
+                                Tecnologia
+                            </td>
+                            <td class="py-4 px-6">
+                                Laptop
+                            </td>
+                            <td class="py-4 px-6">
+                               Apple
+                            </td>
+                            <td class="py-4 px-6">
+                                10
+                            </td>
+                            <td class="py-4 px-6">
+                                15
+                            </td>
+                            <td class="py-4 px-6">
+                                15000
+                            </td>
+                            <td class="py-4 px-6">
+                                18000
+                            </td>
+                        </tr>
+                        <tr class="transition-all ease duration-100 hover:bg-blue-100 hover:text-blue-600" role="button">
+                            <td class="py-4 px-6">
+                                <input class="w-5 h-5" type="checkbox" name="seleccionar">
+                            </td>
+                            <td class="py-4 px-6">
+                                3784562
+                            </td>
+                            <th class="py-4 px-6 font-medium">
+                                Apple MacBook Pro 17"
+                            </th>
+                            <td class="py-4 px-6">
+                                Tecnologia
+                            </td>
+                            <td class="py-4 px-6">
+                                Laptop
+                            </td>
+                            <td class="py-4 px-6">
+                               Apple
+                            </td>
+                            <td class="py-4 px-6">
+                                10
+                            </td>
+                            <td class="py-4 px-6">
+                                15
+                            </td>
+                            <td class="py-4 px-6">
+                                15000
+                            </td>
+                            <td class="py-4 px-6">
+                                18000
+                            </td>
+                        </tr>
+                        <tr class="transition-all ease duration-100 bg-gray-100 hover:bg-blue-100 hover:text-blue-600" role="button">
+                            <td class="py-4 px-6">
+                                <input class="w-5 h-5" type="checkbox" name="seleccionar">
+                            </td>
+                            <td class="py-4 px-6">
+                                9845765
+                            </td>
+                            <th class="py-4 px-6 font-medium">
+                                Apple MacBook Pro 17"
+                            </th>
+                            <td class="py-4 px-6">
+                                Tecnologia
+                            </td>
+                            <td class="py-4 px-6">
+                                Laptop
+                            </td>
+                            <td class="py-4 px-6">
+                               Apple
+                            </td>
+                            <td class="py-4 px-6">
+                                10
+                            </td>
+                            <td class="py-4 px-6">
+                                15
+                            </td>
+                            <td class="py-4 px-6">
+                                15000
+                            </td>
+                            <td class="py-4 px-6">
+                                18000
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- ---------------------------------------- -->
+    <!-- -------- Formulario de producto -------- -->
+    <!-- ---------------------------------------- -->
+
+    <!-- <div class="bg-black bg-opacity-20 text-gray-500 w-full h-full p-2 top-0 left-0 fixed z-[1] flex items-center justify-center">
+        <div class="bg-white w-96 p-5 rounded-md shadow-md relative">
+
+            <button class="bg-white text-red-500 rounded-md absolute top-5 right-5" title="Cerrar Formulario">
+                <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </button>
+
+            <p class="text-blue-500 text-lg font-medium leading-5 mb-1 uppercase">Nuevo producto</p>
+            <form class="flex flex-col gap-2">
+                <div>
+                    <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Codigo: </label>
+                    <div class="w-full">
+                        <input type="text" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+                    </div>
+                </div>
+                <div>
+                    <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Descripcion: </label>
+                    <div class="w-full">
+                        <input type="text" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="basis-1/2">
+                        <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Precio costo: </label>
+                        <div class="w-full relative">
+                            <input type="number" class="w-full pl-4 p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+                            <span before="$" class="before:content-[attr(before)] absolute w-5 h-full top-0 left-0 flex items-center justify-center"></span>
+                        </div>
+                    </div>
+                    <div class="basis-1/2">
+                        <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Ganancia: </label>
+                        <div class="w-full relative">
+                            <input type="number" class="w-full pr-4 p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+                            <span before="%" class="before:content-[attr(before)] absolute w-5 h-full top-0 right-0 flex items-center justify-center"></span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Precio venta: </label>
+                    <div class="w-full relative">
+                        <input type="number" class="w-full pl-4 p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+                        <span before="$" class="before:content-[attr(before)] absolute w-5 h-full top-0 left-0 flex items-center justify-center"></span>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="basis-1/2">
+                        <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Departamento: </label>
+                        <div class="w-full flex items-center">
+                            <select name="select" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                                <option value="todos" selected> - Sin departamento - </option>
+                                <option value="todos">Departamento 1</option>
+                                <option value="todos">Departamento 2</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="basis-1/2">
+                        <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Categoria: </label>
+                        <div class="w-full flex items-center">
+                            <select name="select" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                                <option value="todos" disabled selected> - Selecciona - </option>
+                                <option value="todos">Categoria 1</option>
+                                <option value="todos">Categoria 2</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div class="basis-1/2">
+                        <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Existencia: </label>
+                        <div class="w-full relative">
+                            <input type="number" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+                        </div>
+                    </div>
+                    <div class="basis-1/2">
+                        <label class="text-gray-500 uppercase text-xs pb-1 font-medium"> Inventario minimo: </label>
+                        <div class="w-full relative">
+                            <input type="number" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="w-full mt-4 flex justify-center" id="buttonsDialog">
+                    <button class="bg-white text-gray-600 px-5 py-2 flex items-center justify-center gap-1 font-medium rounded-md shadow-md border transition-all ease duration-300 active:shadow-none" title="Guardar los cambios">
+                        <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022Z"/>
+                        </svg>
+                        <span>Guardar Producto</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div> -->
+
+
+
+    <!-- ---------------------------------------- -->
+    <!-- -------- Lista de departamentos -------- -->
+    <!-- ---------------------------------------- -->
+
+    <!-- <div class="w-full my-3 flex items-start justify-center">
+        <div class="bg-white w-[95%]">
+
+            <div class="md:flex">
+
+                <div class="p-4 md:basis-1/4">
+
+                    <div class="flex pb-1 items-center justify-between border-b-2 border-gray-200">
+
+                        <div class="flex items-center">
+                            <h2 class="text-blue-500 font-bold uppercase">Departamentos</h2>
+                        </div>
+
+                        <ul class="flex items-center gap-2 whitespace-nowrap">
+                            <li class="text-green-500">
+                                <button class="p-1 rounded-full">
+                                    <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+                                    </svg>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <ul class="mt-3 text-gray-700 text-sm font-medium flex-col gap-1 hidden md:flex">
+                        <li>
+                            <button class="w-full px-3 py-2 text-start hover:bg-gray-100">
+                                Departamento 1
+                            </button>
+                        </li>
+                        <li>
+                            <button class="w-full px-3 py-2 text-start hover:bg-gray-100">
+                                Departamento 2
+                            </button>
+                        </li>
+                        <li>
+                            <button class="w-full px-3 py-2 text-start bg-orange-500 text-white">
+                                Departamento 3
+                            </button>
+                        </li>
+                        <li>
+                            <button class="w-full px-3 py-2 text-start hover:bg-gray-100">
+                                Departamento 4
+                            </button>
+                        </li>
+                    </ul>
+
+                    <div class="w-full md:hidden md:w-40">
+                        <div class="w-full flex items-center">
+                            <select name="select" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+                                <option value="todos">Departamento 1</option>
+                                <option value="todos">Departamento 2</option>
+                                <option value="todos" selected>Departamento 3</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="bg-gray-50 md:h-[80vh] p-4 md:basis-3/4">
+
+                    <div class="pb-1 flex items-center justify-between border-b-2 border-gray-200 whitespace-nowrap">
+                        <div class="flex items-center">
+                            <h2 class="text-orange-500 font-bold uppercase">Departamento 3</h2>
+                        </div>
+
+                        <button class="bg-green-500 text-white p-1 text-sm font-medium rounded-full flex items-center sm:rounded-md sm:py-1 sm:px-3">
+                            <svg class="w-4 h-4 block sm:hidden" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"/>
+                            </svg>
+                            <span class="hidden sm:block">Crear categoria</span>
+                        </button>
+                    </div>
+
+                    <div class="w-full">
+
+                        <ul class="mt-3 text-gray-500 text-sm font-medium flex flex-col gap-1">
+                            <li>
+                                <button class="w-full px-3 py-2 text-start hover:bg-gray-100">
+                                    Categoria 1
+                                </button>
+                            </li>
+                            <li>
+                                <button class="w-full px-3 py-2 text-start hover:bg-gray-100">
+                                    Categoria 2
+                                </button>
+                            </li>
+                            <li>
+                                <button class="w-full px-3 py-2 text-start hover:bg-gray-100">
+                                    Categoria 3
+                                </button>
+                            </li>
+                            <li>
+                                <button class="w-full px-3 py-2 text-start hover:bg-gray-100">
+                                    Categoria 4
+                                </button>
+                            </li>
+                        </ul>
+
+                        <p class="text-gray-500 text-sm my-1 text-center md:text-start">
+                            Aún no hay categorías registradas para este departamento
+                        </p>
+
+                    </div>
+                    
+                    <div class="w-full mt-5 flex items-start justify-center">
+                        <button class="text-gray-500 py-2 px-4 text-sm font-medium rounded-md flex items-center gap-1 shadow-md transition-all ease duration-300 active:text-red-500">
+                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+                            </svg>
+                            <span>Eliminar departamento</span>
+                        </button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div> -->
+
+    
+</body>
+</html>
