@@ -1,0 +1,36 @@
+<header class="w.full py-3">
+  <div class="w-full pt-2 pb-4 flex items-center justify-between">
+      <div class="flex items-center gap-2">
+          <button class="text-blue-500 transition-all ease duration-300 active:text-blue-400" title="Menú">
+              <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+          </button>
+          <h1 class="text-xl font-bold text-blue-500">
+              <a routerLink="" title="Super Yajid">Super Yajid</a>
+          </h1>
+      </div>
+      <a routerLink="profile" class="text-blue-500 transition-all ease duration-300 active:text-blue-400" title="Mi cuenta">
+          <svg class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+          </svg>
+      </a>
+  </div>
+
+  <nav class="w-full text-gray-700 flex items-start justify-center">
+      <ul class="w-full text-sm uppercase font-medium flex justify-between gap-1 lg:gap-2">
+
+        <li class="w-full" *ngFor="let icono of iconos; let i = index">
+          <a
+            [routerLink]="enlaces[i].path"
+            class="w-full py-1 rounded-md flex items-center justify-center gap-1 transition-all ease duration-200 shadow-md hover:shadow active:shadow-sm  active:opacity-50"
+          >
+            <span [innerHTML]="icono"></span>
+            <span class="hidden md:block"> {{ enlaces[i].title }} </span>
+          </a>
+        </li>
+
+      </ul>
+  </nav>
+</header>

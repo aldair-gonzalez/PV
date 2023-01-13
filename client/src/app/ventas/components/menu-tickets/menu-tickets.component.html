@@ -1,0 +1,21 @@
+<div class="w-full my-3 mb-2 pb-2 flex items-center gap-4 whitespace-nowrap overflow-x-auto">
+  <ul class="flex gap-2 items-center">
+    <li *ngFor="let ticket of tickets">
+      <a
+        [routerLink]="ticket.path"
+        class="font-medium text-sm p-2 rounded-t-md transition-all ease duration-200"
+        [ngClass]="(ticket.active) ? 'bg-orange-500 text-white' : 'text-gray-500 hover:text-orange-500'"
+        [title]="'Ver ' + ticket.title"
+        (click)="handleActive(ticket)"
+      >
+        {{ ticket.title }}
+      </a>
+    </li>
+
+  </ul>
+  <button class="bg-blue-500 text-white rounded-full p-1 transition-all ease duration-200 active:bg-blue-400" title="Crear un nuevo carrito" (click)="createTicket()">
+    <svg class="w-[1.5em] h-[1.5em]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+    </svg>
+  </button>
+</div>

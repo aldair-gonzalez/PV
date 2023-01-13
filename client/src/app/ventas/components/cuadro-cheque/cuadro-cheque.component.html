@@ -1,0 +1,56 @@
+<div class="flex flex-col gap-2 lg:gap-4 md:flex-row lg:flex-col">
+
+	<!-- Descuentos -->
+	<div class="bg-gray-50 w-full p-4 flex flex-col gap-2 rounded-md overflow-hidden">
+		<div class="text-gray-500">
+			<p class="uppercase text-gray-400 text-xs font-medium"> Subtotal: </p>
+			<p class="text-gray-800 text-2xl"> $196,000.00 </p>
+		</div>
+		<div class="text-gray-500">
+			<p class="uppercase text-gray-400 text-xs font-medium"> Descuento: </p>
+			<div class="w-full flex gap-2">
+				<div class="w-1/2 flex items-center gap-1">
+					<span class="text-sm">$</span>
+					<input type="text" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+				</div>
+				<div class="w-1/2 flex items-center gap-1">
+					<input type="text" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500">
+					<span class="text-sm">%</span>
+				</div>
+			</div>
+		</div>
+		<div class="text-gray-500">
+			<p class="uppercase text-gray-400 text-xs font-medium"> Pagó con: </p>
+			<div class="w-full flex gap-2">
+				<div class="w-1/2 flex items-center gap-1">
+					<span class="text-sm">$</span>
+					<input type="text" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md block focus:outline-none focus:bg-white focus:border-gray-500" value="200000">
+				</div>
+			</div>
+		</div>
+		<div class="text-gray-500">
+			<p class="uppercase text-gray-400 text-xs font-medium"> Cambio: </p>
+			<p class="text-gray-800 text-2xl"> $4,000.00 </p>
+		</div>
+	</div>
+
+	<!-- Cuadro de cobro -->
+	<div class="bg-white text-orange-500 w-full mb-4 p-4 outline rounded-md overflow-hidden">
+		<div class="w-full h-full flex flex-col items-center justify-center">
+			<p class="text-xl">Total a pagar:</p>
+			<h2 class="text-4xl text-blue-500 font-bold">
+				$196,000.00
+			</h2>
+			<div class="mt-3 flex items-center justify-center gap-2">
+				<button class="bg-orange-500 text-white py-2 px-6 flex items-center justify-center gap-1 font-medium uppercase rounded-md transition-all ease duration-200 active:bg-orange-400" title="Cobrar la venta actual">
+					<svg class="text-white w-4 h-4" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+						<path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+					</svg>
+					Cobrar
+				</button>
+			</div>
+		</div>
+	</div>
+
+</div>

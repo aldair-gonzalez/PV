@@ -1,0 +1,36 @@
+<app-search-bar [filtros]="true"></app-search-bar>
+
+<app-table [columnas]="columnas">
+  <tr class="fila" *ngFor="let item of filas" role="button">
+    <td class="py-4 px-6">
+      <input type="checkbox" class="w-5 h-5" role="button">
+    </td>
+    <td class="py-4 px-6">
+      {{ item.codigo }}
+    </td>
+    <td class="py-4 px-6">
+      {{ item.producto }}
+    </td>
+    <td class="py-4 px-6">
+      {{ item.departamento }}
+    </td>
+    <td class="py-4 px-6">
+      {{ item.categoria }}
+    </td>
+    <td class="py-4 px-6">
+      {{ item.proveedor }}
+    </td>
+    <td class="py-4 px-6">
+      {{ item.invMinimo }}
+    </td>
+    <td class="py-4 px-6">
+      {{ item.existencia }}
+    </td>
+    <td class="py-4 px-6">
+      {{ item.pCosto }}
+    </td>
+    <td class="py-4 px-6">
+      {{ item.pVenta }}
+    </td>
+  </tr>
+</app-table>

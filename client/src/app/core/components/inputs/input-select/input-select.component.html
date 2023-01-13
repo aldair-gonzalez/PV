@@ -1,0 +1,7 @@
+<p class="text-gray-500 uppercase text-xs pb-1 font-medium">{{ name }}</p>
+<div class="w-full flex items-center">
+    <select name="select" class="w-full p-1 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:outline-none focus:bg-white focus:border-blue-500">
+        <option value="todos"> - Todos - </option>
+        <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+    </select>
+</div>

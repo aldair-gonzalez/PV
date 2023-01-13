@@ -1,0 +1,16 @@
+<div class="w-full mb-5 rounded-md shadow-sm">
+  <div class="overflow-x-auto">
+      <table class="w-full text-sm text-left text-gray-500">
+          <thead class="text-xs uppercase bg-gray-100 text-blue-400 whitespace-nowrap">
+              <tr>
+                <th class="py-3 px-6" *ngFor="let columna of columnas">
+                  {{ columna }}
+                </th>
+              </tr>
+          </thead>
+          <tbody id="products">
+            <ng-content></ng-content>
+          </tbody>
+      </table>
+  </div>
+</div>

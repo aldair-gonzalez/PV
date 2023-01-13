@@ -1,0 +1,18 @@
+<div class="w-screen -translate-x-[2.5%] bg-gray-100 p-2 rounded-md">
+  <div class="w-[96.5%] mx-auto">
+    <div class="m-auto overflow-x-auto">
+      <ul class="text-gray-500 text-xs font-medium whitespace-nowrap flex items-center justify-start gap-2">
+        <li class="bg-white rounded-md border shadow-sm" *ngFor="let icono of iconos; let i = index;">
+          <button
+            [routerLink]="enlaces[i].path"
+            class="py-1 px-3 flex items-center justify-center gap-1"
+            (click)="handleFunction(enlaces[i].func)"
+          >
+            <span [innerHTML]="icono"></span>
+            <span>{{ enlaces[i].title }}</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

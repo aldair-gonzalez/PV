@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.fila {
+  @apply transition ease-linear duration-100;
+}
+.fila:nth-child(even) {
+  @apply even:bg-gray-100;
+}
+.fila, .fila:nth-child(even):hover {
+  @apply hover:bg-blue-100 hover:text-blue-600;
+}
