@@ -1,5 +1,5 @@
 export interface Proveedor {
-    id          : number;
-    nombre      : string;
-    descripcion : string;
+    id_proveedor : number;
+    proveedor    : string;
+    informacion  : string;
 }

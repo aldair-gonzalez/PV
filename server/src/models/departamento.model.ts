@@ -1,5 +1,5 @@
 export interface Departamento {
-    id           : number;
-    nombre       : string;
-    Departamento : string;
+    id_departamento : number;
+    departamento    : string;
+    informacion     : string;
 }

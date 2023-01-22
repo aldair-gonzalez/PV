@@ -1,7 +1,9 @@
 export interface Movimiento {
-    id: number;
-    fecha: Date;
-    producto: number;
-    tipo: string;
-    cantidad: number;
+    id_movimiento : number;
+    fecha         : Date;
+    hora          : Date;
+    producto      : number;
+    tipo          : string;
+    cantidad      : number;
+    departamento  : number;
 }
